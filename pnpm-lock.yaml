@@ -8,6 +8,9 @@ dependencies:
   bootstrap:
     specifier: 4.6.2
     version: 4.6.2(jquery@3.7.0)(popper.js@1.16.1)
+  holderjs:
+    specifier: ^2.9.9
+    version: 2.9.9
 
 devDependencies:
   sass:
@@ -313,6 +316,10 @@ packages:
     dependencies:
       is-glob: 4.0.3
     dev: true
+
+  /holderjs@2.9.9:
+    resolution: {integrity: sha512-ceWPz1MrR3dxOoZXiom+G48+l1VPG3TcjBw9fq5iwCiZAMvYX8Aia13GOxT7DoV/AcSyTH7Vvr11ygjZP9qn4w==}
+    dev: false
 
   /immutable@4.3.3:
     resolution: {integrity: sha512-808ZFYMsIRAjLAu5xkKo0TsbY9LBy9H5MazTKIEHerNkg0ymgilGfBPMR/3G7d/ihGmuK2Hw8S1izY2d3kd3wA==}
