@@ -67,12 +67,13 @@
     <main class="flex-grow-1">
       <div class="container">
         <div class="row">
-          <div class="col">Col 1</div>
-          <div class="col">Col 2</div>
-          <div class="col">Col 3</div>
+          <div class="col text-center">Col 1</div>
+          <div class="col text-center">Col 2</div>
+          <div class="col text-center">Col 3</div>
         </div>
       </div>
-      <form class="container">
+      <form class="container" aria-labelledby="formTitle">
+        <h2 id="formTitle">Form</h2>
         <div class="form-group">
           <label for="name">Name</label>
           <input
@@ -183,6 +184,88 @@
           </div>
         </fieldset>
       </form>
+      <div class="container mt-3 pt-3 border-top">
+        <h2>Buttons</h2>
+        <div class="row">
+          <div class="col py-2">
+            <button class="btn btn-primary">Clicc meH</button>
+          </div>
+          <div class="col py-2">
+            <button class="btn btn-warning">Click me</button>
+          </div>
+          <div class="col py-2">
+            <button class="btn btn-outline-primary">Click me</button>
+          </div>
+          <div class="col py-2">
+            <button class="btn btn-secondary btn-lg">Click me</button>
+          </div>
+          <div class="col py-2">
+            <button class="btn btn-success btn-sm">Click me</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col py-2">
+            <button class="btn btn-block btn-info">Click me</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col py-2">
+            <legend id="anyLabel">Choose any</legend>
+            <fieldset
+              class="btn-group btn-group-toggle"
+              data-toggle="buttons"
+              aria-labelledby="anyLabel"
+            >
+              <label class="btn btn-primary active" for="active">
+                <input
+                  type="checkbox"
+                  name="any"
+                  id="active"
+                  autocomplete="off"
+                />
+                Active
+              </label>
+              <label class="btn btn-primary" for="inactive">
+                <input
+                  type="checkbox"
+                  name="any"
+                  id="inactive"
+                  autocomplete="off"
+                />
+                Not Active
+              </label>
+              <label class="btn btn-primary" for="disabled">
+                <input
+                  type="checkbox"
+                  name="any"
+                  id="disabled"
+                  autocomplete="off"
+                />
+                Disabled
+              </label>
+            </fieldset>
+          </div>
+          <div class="col py-2">
+            <legend id="oneLabel">Choose one</legend>
+            <fieldset
+              class="btn-group btn-group-toggle"
+              data-toggle="buttons"
+              aria-labelledby="oneLabel"
+            >
+              <label class="btn btn-secondary active">
+                <input type="radio" name="options" id="option1" checked />
+                Active
+              </label>
+              <label class="btn btn-secondary">
+                <input type="radio" name="options" id="option2" /> Radio
+              </label>
+              <label class="btn btn-secondary">
+                <input type="radio" name="options" id="option3" /> Radio
+              </label>
+            </fieldset>
+          </div>
+        </div>
+      </div>
     </main>
     <footer>Footer</footer>
     <script type="module" src="main.js"></script>
